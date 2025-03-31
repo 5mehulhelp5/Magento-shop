@@ -9,5 +9,6 @@ export const users = {
     city: "Vilnius",
     postalCode: "10001",
     phone: "+37099999999",
+    password: "Password1",
   },
 };

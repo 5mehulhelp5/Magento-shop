@@ -1,40 +1,50 @@
-```markdown
+````markdown
 # Magento Purchase Flow Test Suite
 
-## Overview  
+## Overview
+
 This test suite automates end-to-end tests for the Magento purchase flow using **Playwright**.
 
-## Test Scenarios Covered  
+## Test Scenarios Covered
 
-1. ✅ Successful purchase completion  
-2. 📦 Handling multiple items in cart with successful purchase  
-3. 🔄 Item removal from cart works correctly  
-4. 💳 Card rejection  
-5. ❌ Invalid card authentication fails  
-6. 🚫 Checkout blocked if shipping details are missing  
-7. 🛒 Empty cart validation before checkout  
+1. ✅ Successful purchase completion
+2. 📦 Handling multiple items in cart with successful purchase
+3. 🔄 Item removal from cart works correctly
+4. 💳 Card rejection
+5. ❌ Invalid card authentication fails
+6. 🚫 Checkout blocked if shipping details are missing
+7. 🛒 Empty cart validation before checkout
+8. 🔍 Sorting products by name and price
+9. 🛠️ Post-purchase account registration
+10. 🚀 Navigation through categories
 
-## 📌 Setup & Execution  
+## 📌 Setup & Execution
 
-### **1️⃣ Install Dependencies**  
+### **1️⃣ Install Dependencies**
+
 ```bash
 npm install
 ```
+````
 
-### **2️⃣ Run Tests**  
+### **2️⃣ Run Tests**
+
 ```bash
 npx playwright test
 ```
 
-### **3️⃣ View Test Report**  
+### **3️⃣ View Test Report**
+
 ```bash
 npx playwright show-report
 ```
 
-### **4️⃣ Run Tests in Docker**  
+### **4️⃣ Run Tests in Docker**
+
 ```bash
 docker-compose up --build
 ```
 
-## 🤖 CI/CD Integration  
+## 🤖 CI/CD Integration
+
 This repository includes GitHub Actions to run the tests automatically on each push or pull request.
