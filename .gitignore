@@ -33,3 +33,6 @@ Dockerfile
 
 # Ignore TypeScript build artifacts (if applicable)
 *.tsbuildinfo
+
+# Ignore reports
+.nyc_output/

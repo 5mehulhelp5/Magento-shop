@@ -25,7 +25,8 @@
     "commit:push": "npm run commit && git push",
     "docker:build": "docker build -t node-playwright-tests .",
     "docker:run": "docker run --rm node-playwright-tests",
-    "docker:compose": "docker-compose up --build"
+    "docker:compose": "docker-compose up --build",
+    "test:coverage": "nyc --reporter=html --reporter=text npx playwright test && npx playwright show-report"
   },
   "devDependencies": {
     "@playwright/test": "^1.51.1",
@@ -33,6 +34,7 @@
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-playwright": "^2.2.0",
     "eslint-plugin-prettier": "^5.2.5",
+    "nyc": "^17.1.0",
     "playwright-slack-reporter": "^1.0.0",
     "prettier": "^3.5.3",
     "typescript": "^5.8.2"
