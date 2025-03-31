@@ -38,4 +38,3 @@ docker-compose up --build
 
 ## 🤖 CI/CD Integration  
 This repository includes GitHub Actions to run the tests automatically on each push or pull request.
-```
