@@ -132,12 +132,14 @@ This repository includes **GitHub Actions** to run tests automatically on **each
 ---
 
 ## **📊 Test Coverage Report**
-Playwright includes built-in test coverage analysis.
+
+Istanbul instruments your ES5 and ES2015+ JavaScript code with line counters, so that you can track how well your unit-tests exercise your codebase.
+
+The nyc command-line-client for Istanbul works well with most JavaScript testing frameworks: tap, mocha, AVA, etc.
 
 ### **Generate & View Coverage**
 ```sh
-npx playwright test --coverage
-npx playwright show-report
+nyc --reporter=html --reporter=text npx playwright test && npx playwright show-report
 ```
 
 ---
