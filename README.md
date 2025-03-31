@@ -17,22 +17,22 @@ This test suite automates end-to-end tests for the Magento purchase flow using *
 ## 📌 Setup & Execution  
 
 ### **1️⃣ Install Dependencies**  
-```
+```bash
 npm install
 ```
 
 ### **2️⃣ Run Tests**  
-```
+```bash
 npx playwright test
 ```
 
 ### **3️⃣ View Test Report**  
-```
+```bash
 npx playwright show-report
 ```
 
 ### **4️⃣ Run Tests in Docker**  
-```
+```bash
 docker-compose up --build
 ```
 
