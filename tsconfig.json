@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "strict": true,
+    "baseUrl": "./",
+    "paths": {
+      "@config/*": ["config/*"],
+      "@pageObjects/*": ["pageObjects/*"]
+    }
+  }
+}

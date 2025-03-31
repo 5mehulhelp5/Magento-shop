@@ -1,0 +1,46 @@
+{
+  "name": "wallee-homework-task",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "E2E Test Suite for Magento",
+  "author": "Your Name",
+  "license": "ISC",
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "test:debug": "PWDEBUG=1 npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:trace": "npx playwright show-trace trace.zip",
+    "test:report": "npx playwright show-report",
+    "test:report:json": "npx playwright test --reporter=json",
+    "test:report:junit": "npx playwright test --reporter=junit",
+    "test:all-reports": "npx playwright test --reporter=html,json,junit",
+    "test:slowmo": "npx playwright test --slow-mo=1000",
+    "test:mobile": "npx playwright test --device='iPhone 12'",
+    "test:filter": "npx playwright test -g 'critical'",
+    "format": "npx prettier --write .",
+    "lint": "npx eslint . --fix",
+    "format:lint": "npm run format && npm run lint",
+    "commit": "npm run format:lint && git add . && git commit -m 'chore: format & lint before commit'",
+    "commit:push": "npm run commit && git push",
+    "docker:build": "docker build -t node-playwright-tests .",
+    "docker:run": "docker run --rm node-playwright-tests",
+    "docker:compose": "docker-compose up --build"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-playwright": "^2.2.0",
+    "eslint-plugin-prettier": "^5.2.5",
+    "playwright-slack-reporter": "^1.0.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  }
+}
